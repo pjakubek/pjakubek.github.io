@@ -88,20 +88,13 @@
             <h2>Kenntnisse</h2>
      
             <script>
-                new Chartist.Bar('.ct-chart', {
-  labels: [Softwareentwicklung, Webentwicklung, Design],
-  series: [
-    [5, 4, 3, 7, 5, 10, 3],
-    [3, 2, 9, 5, 4, 6, 4]
-  ]
+              new Chartist.Bar('.ct-chart', {
+  labels: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
+  series: [20, 60, 120, 200, 180, 20, 10]
 }, {
-  seriesBarDistance: 10,
-  reverseData: true,
-  horizontalBars: true,
-  axisY: {
-    offset: 70
-  }
+  distributeSeries: true
 });
+
 </script>
             
         </div>
