@@ -73,37 +73,36 @@
             <tr>
                 <td>von - bis</td>
                 <td>Ausbildung</td>
-                <td>Kenntnisse</td>
+                <td>Abschluss</td>
                  </tr>
                  <tr>
                      <td>2010 - 2016</td>
                      <td>HTBLVA TGM Wien</td>
-                     <td> - Softwareentwicklung (Java, PHP, Python) <br>
-                          - Webentwicklung (HTML, CSS, JavaScript) <br>
-                          - Bild-,Audio-,Videobearbeitung (Adobe Creative Suite) <br>
-                          - Netzwerktechnik Grundlagen <br>
-                         <div class="ct-chart ct-perfect-fourth">
-                             <script>
-                                 var data = {
-  // A labels array that can contain any sort of values
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-  // Our series array that contains series objects or in this case series data arrays
-  series: [
-    [5, 2, 4, 2, 0]
-  ]
-};
-
-// Create a new line chart object where as first parameter we pass in a selector
-// that is resolving to our chart container element. The Second parameter
-// is the actual data object.
-new Chartist.Line('.ct-chart', data);</script>
-                         </div>
+                     <td> Matura
                     </td>
             
                  </tr>
                 </tbody>
             </table>
 
+            <h2>Kenntnisse</h2>
+            <div class="ct-chart ct-perfect-fourth">
+            <script>
+                new Chartist.Bar('.ct-chart', {
+  labels: [Softwareentwicklung, Webentwicklung, Design],
+  series: [
+    [5, 4, 3, 7, 5, 10, 3],
+    [3, 2, 9, 5, 4, 6, 4]
+  ]
+}, {
+  seriesBarDistance: 10,
+  reverseData: true,
+  horizontalBars: true,
+  axisY: {
+    offset: 70
+  }
+});
+</script></div>
             
         </div>
         <div class="one column"></div>
