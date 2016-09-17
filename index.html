@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Peter Jakubek » CV <</title>
+  <title>Peter Jakubek » CV </title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -30,6 +30,11 @@
   ---------------------------------------------------- -->
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
+   
+  <!-- Chartist.js
+  ---------------------------------------------------- -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
 </head>
 <body>
@@ -46,10 +51,10 @@
             <br>
             <h1>Peter Jakubek</h1> <br>
             <h2>Informationstechniker</h2> <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
-            <span class="sr-only">Loading...</span> <br>
-            <i class="fa fa-map-marker" aria-hidden="true"></i> Wien <br>
+            <span class="sr-only">Loading...</span> <br> <br>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> Wien, Österreich <br>
             <i class="fa fa-envelope" aria-hidden="true"></i> peter.jakubek@outlook.com <br>
-            
+            <br>
 
             
 
@@ -77,6 +82,22 @@
                           - Webentwicklung (HTML, CSS, JavaScript) <br>
                           - Bild-,Audio-,Videobearbeitung (Adobe Creative Suite) <br>
                           - Netzwerktechnik Grundlagen <br>
+                         <div class="ct-chart ct-perfect-fourth">
+                             <script>
+                                 var data = {
+  // A labels array that can contain any sort of values
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [5, 2, 4, 2, 0]
+  ]
+};
+
+// Create a new line chart object where as first parameter we pass in a selector
+// that is resolving to our chart container element. The Second parameter
+// is the actual data object.
+new Chartist.Line('.ct-chart', data);</script>
+                         </div>
                     </td>
             
                  </tr>
